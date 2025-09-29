@@ -58,3 +58,13 @@ def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> List[st
             break
     # drop empty
     return [c for c in chunks if c]
+
+def store_file_and_chunks(db: Session, filepath: str, original_filename: str):
+    # extract text
+    text = extract_text_from_file(filepath, original_filename)
+    text_length = len(text)
+    # create file record
+    file_rec = File(original_filename=original_filename, stored_filename=os.path.basename(filepath), text_length=text_length)
+    db.add(file_rec)
+    db.commit()
+    db.refresh(file_rec)
