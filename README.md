@@ -35,11 +35,28 @@ ragg/
 
 ```
 
-### Setting Up the Environment
-## 1. Create a Virtual Environment
+## Setting Up the Environment
+### 1. Create a Virtual Environment
 virtual environment isolates project dependencies. can use ven
 ```bash
 Using venv:
 python -m venv venv
 venv\Scripts\activate  
+```
+### 2. Install Required Dependencies
+Navigate to your project directory and install dependencies:
+```bash
+With pip:
+pip install -r requirements.txt
+pip install streamlit
+```
+### 3.Configuring Environment Variables
+To keep sensitive information like API keys secure, store them in a .env file. This file should not be committed to version control.
+Create a .env file in your project root and add your OpenAI API key:
+```bash
+HF_API_KEY=your_api_key
+```
+### 4.Create uploads dir:
+```bash
+mkdir -p ./uploads
 ```
