@@ -3,30 +3,20 @@
 This project implements a simple AI chatbot that allows users to upload multiple PDF (or text/docx) documents, extracts text, generates embeddings, stores metadata in a SQL database, and answers user queries using a RAG (Retrieval-Augmented Generation) pipeline.
 
 ### Backend: 
-```bash
 FastAPI to upload multiple PDF files, extract text, 
 chunk, create embeddings (Hugging Face Inference API) and store file metadata in SQL (SQLAlchemy).
-```
+
 ### Frontend: 
-```bash
 Streamlit to upload files and chat with the RAG bot
 Basic HTML route (FastAPI) for listing files.
-```
+
 ### tests 
-```bash
 (pytest) that mock HF calls and verify uploads + chat
-```
+
 
 
 ## run (step-by-step)
 1. create the project files
-2. Copy .env.ex to .env and set HF_API_KEY.
-3. Create Python venv and install deps:
-
-    python -m venv .venv
-    venv\Scripts\activate    
-    pip install -r requirements.txt
-    pip install streamlit
 
 
 ```bash
