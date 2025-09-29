@@ -1,4 +1,4 @@
-# 📌 AI Chatbot with Document Upload (FastAPI + Streamlit + LangChain + Hugging Face)
+# AI Chatbot with Document Upload (FastAPI + Streamlit + LangChain + Hugging Face)
 
 This project implements a simple AI chatbot that allows users to upload multiple PDF (or text/docx) documents, extracts text, generates embeddings, stores metadata in a SQL database, and answers user queries using a RAG (Retrieval-Augmented Generation) pipeline.
 
@@ -10,10 +10,8 @@ chunk, create embeddings (Hugging Face Inference API) and store file metadata in
 Streamlit to upload files and chat with the RAG bot
 Basic HTML route (FastAPI) for listing files.
 
-### tests 
+### Tests:
 (pytest) that mock HF calls and verify uploads + chat
-
-
 
 ## run (step-by-step)
 1. create the project files
@@ -51,7 +49,7 @@ venv\Scripts\activate
 ### 2. Install Required Dependencies
 Navigate to your project directory and install dependencies:
 ```bash
-With pip:
+With pip
 pip install -r requirements.txt
 pip install streamlit
 ```
