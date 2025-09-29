@@ -11,7 +11,7 @@
     pip install -r requirements.txt
     pip install streamlit
 
-    Project structure
+📂 Project Structure
 ragg/
 ├── app/                    
 │    ├── config.py            # configuration
@@ -35,6 +35,7 @@ ragg/
 📌 AI Chatbot with Document Upload (FastAPI + Streamlit + LangChain + Hugging Face)
 
 This project implements a simple AI chatbot that allows users to upload multiple PDF (or text/docx) documents, extracts text, generates embeddings, stores metadata in a SQL database, and answers user queries using a RAG (Retrieval-Augmented Generation) pipeline.
+```bash
 
 📂 Project Structure
 ai-chatbot/
@@ -59,6 +60,7 @@ ai-chatbot/
 │   └── app.py                # Streamlit UI (file upload + chat interface)
 │
 └── migrations/ (optional)    # Alembic migrations if using for DB schema versioning
+```
 
 🚀 How It Works
 
@@ -129,3 +131,5 @@ docker-compose up --build
 
 
 This will start both FastAPI and Streamlit services in containers.
+
+
