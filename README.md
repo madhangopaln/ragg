@@ -1,8 +1,11 @@
-# ragg
+# 📌 AI Chatbot with Document Upload (FastAPI + Streamlit + LangChain + Hugging Face)
+
+This project implements a simple AI chatbot that allows users to upload multiple PDF (or text/docx) documents, extracts text, generates embeddings, stores metadata in a SQL database, and answers user queries using a RAG (Retrieval-Augmented Generation) pipeline.
 
 ### Backend: 
 ```bash
-FastAPI to upload multiple PDF files, extract text, chunk, create embeddings (Hugging Face Inference API) and store file metadata in SQL (SQLAlchemy).
+FastAPI to upload multiple PDF files, extract text, 
+chunk, create embeddings (Hugging Face Inference API) and store file metadata in SQL (SQLAlchemy).
 ```
 ### Frontend: 
 ```bash
@@ -25,9 +28,7 @@ Basic HTML route (FastAPI) for listing files.
     pip install -r requirements.txt
     pip install streamlit
 
-📌 AI Chatbot with Document Upload (FastAPI + Streamlit + LangChain + Hugging Face)
 
-This project implements a simple AI chatbot that allows users to upload multiple PDF (or text/docx) documents, extracts text, generates embeddings, stores metadata in a SQL database, and answers user queries using a RAG (Retrieval-Augmented Generation) pipeline.
 ```bash
 📂 Project Structure
 ragg/
@@ -92,5 +93,25 @@ FastAPI docs: http://localhost:8000/docs
 ### 8.Run tests:
 ```bash
 pytest -q
+```
+
+### GitHub Setup:
+#### 1.
+```bash
+Initialize a git repo:
+git init
+git add .
+git commit -m "Initial commit"
+```
+#### 2.
+```bash
+Create a new repository on GitHub
+Add remote and push
+```
+#### 3.
+```bash
+git remote add origin https://github.com/username.git
+git branch -M main
+git push -u origin main
 ```
 
