@@ -60,3 +60,23 @@ HF_API_KEY=your_api_key
 ```bash
 mkdir -p ./uploads
 ```
+### 5.Start FastAPI backend (development):
+```bash
+uvicorn backend.app.main:app --reload
+```
+### 6.Start Streamlit UI (in another terminal):
+```bash
+export API_BASE=http://localhost:8000  
+streamlit run streamlit_app.py
+```
+### 7.Open:
+```bash
+Streamlit UI: http://localhost:8501
+FastAPI docs: http://localhost:8000/docs
+```
+
+### 8.Run tests:
+```bash
+pytest -q
+```
+
