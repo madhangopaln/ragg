@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-dotenv
+requests
+PyPDF2
+langchain
+faiss-cpu
+numpy
+streamlit
+pytest
