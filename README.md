@@ -35,4 +35,11 @@ ragg/
 
 ```
 
-
+### Setting Up the Environment
+## 1. Create a Virtual Environment
+virtual environment isolates project dependencies. can use ven
+```bash
+Using venv:
+python -m venv venv
+venv\Scripts\activate  
+```
