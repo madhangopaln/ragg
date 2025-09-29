@@ -115,3 +115,21 @@ git branch -M main
 git push -u origin main
 ```
 
+## Project Explanation
+#### FastAPI backend → 
+handles file upload, DB storage, RAG pipeline (LangChain + Hugging Face).
+
+#### Streamlit frontend → 
+upload PDFs, chat interface.
+
+#### SQLAlchemy → 
+persists file metadata (file_id, filename, upload timestamp, text length).
+
+#### LangChain → 
+handles chunking + FAISS vector retrieval.
+
+#### Hugging Face Inference API → 
+embeddings + generation.
+
+#### Tests → 
+with pytest and mocking HF API.
